@@ -70,7 +70,6 @@ class _NewNoteViewState extends State<NewNoteView> {
 
   @override
   Widget build(BuildContext context) {
-    createNewNote();
     return Scaffold(
       appBar: AppBar(
         title: const Text('New Note'),
