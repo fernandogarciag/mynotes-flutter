@@ -145,7 +145,7 @@ class NotesService {
       where: 'email = ?',
       whereArgs: [email.toLowerCase()],
     );
-    if (results.isNotEmpty) throw CouldNotFindUser();
+    if (results.isEmpty) throw CouldNotFindUser();
 
     return DatabaseUser.fromRow(results.first);
   }
